@@ -63,8 +63,13 @@ EXTRA_DIST = \
 	sof-byt-da7213.m4 \
 	sof-cnl-rt274.m4 \
 	sof-hsw-rt5640.m4 \
-	sof-apl-tdf8532.m4 \
 	sof-apl-pcm512x.m4 \
 	sof-apl-da7219.m4 \
 	sof-glk-da7219.m4 \
-	sof-icl-nocodec.m4
+	sof-icl-nocodec.m4 \
+	sof-apl-tdf8532.m4
+
+bin_PROGRAMS = tplg_graph
+
+tplg_graph_SOURCES = \
+	parse_topology.c
