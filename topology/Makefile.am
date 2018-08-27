@@ -69,7 +69,10 @@ EXTRA_DIST = \
 	sof-icl-nocodec.m4 \
 	sof-apl-tdf8532.m4
 
-bin_PROGRAMS = tplg_graph
+bin_PROGRAMS = \
+	tplg_graph \
+	tplg_check
 
 tplg_graph_SOURCES = \
-	parse_topology.c
+	parse_topology.c \
+	check_topology.c
